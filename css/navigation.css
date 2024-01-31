@@ -5,6 +5,7 @@
     --color-dark-faded: #5a5a5a;
     --color-text: #ffffff;
     --color-link: var(--color-dark-faded);
+    --color-hover: var(--color-text);
 
     position: fixed;
     bottom: 0;

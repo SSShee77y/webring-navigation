@@ -27,6 +27,13 @@ body {
     margin: 0;
 }
 
+div {
+    margin: 40px;
+}
+
 img {
     width: 100%;
+    max-width: 240px;
+    object-fit: cover;
+    object-position: center;
 }
