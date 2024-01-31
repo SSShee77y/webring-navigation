@@ -1,0 +1,41 @@
+/* Navbar */
+
+.navbar {
+    --color-navbar-bg: #1f1f1f;
+    --color-dark-faded: #5a5a5a;
+    --color-text: #ffffff;
+    --color-link: var(--color-dark-faded);
+
+    position: fixed;
+    bottom: 0;
+    background-color: var(--color-navbar-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.70;
+    width: 100%;
+
+    p, a, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+        line-height: 0%;
+        color: var(--color-tetx);
+    }
+}
+
+.navbar-name {
+    padding-right: 20px;
+    border-right: 2px solid var(--color-dark-faded);
+    color: var(--color-text);
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    padding-left: 20px;
+    color: var(--color-link);
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: var(--color-hover);
+}
