@@ -1,12 +1,14 @@
 /* Navbar */
 
 .navbar {
+    /* Variables */
     --color-navbar-bg: #1f1f1f;
     --color-dark-faded: #5a5a5a;
     --color-text: #ffffff;
     --color-link: var(--color-dark-faded);
     --color-hover: var(--color-text);
 
+    /* Properties */
     position: fixed;
     bottom: 0;
     background-color: var(--color-navbar-bg);
@@ -18,7 +20,7 @@
 
     p, a, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
         line-height: 0%;
-        color: var(--color-tetx);
+        color: var(--color-text);
     }
 }
 
@@ -38,5 +40,5 @@
 
 .navbar a.active,
 .navbar a:hover {
-    color: var(--color-hover);
+    color: var(--color-text);
 }
