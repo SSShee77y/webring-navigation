@@ -14,13 +14,11 @@ var websites = [
 var currentIndex = 0;
 
 window.onload = function getCurrentIndex() {
-    var path = window.location.href; 
-    var page = path.split("/");
-
-    if (page.includes("https") || page.includes("http"))
-        currentIndex = websites.indexOf(path);
-    else
-        currentIndex = websites.indexOf(page.pop());
+    var path = window.location.href.split("#")[0];
+    currentIndex = websites.indexOf(path);
+    if (currentIndex == -1) {
+        currentIndex = websites.indexOf(path.split("/").pop());
+    }
 }
 
 /*
@@ -44,8 +42,7 @@ function goToNext() {
  */
 function goToRandom() {
     var randomIndex = currentIndex;
-    while (randomIndex == currentIndex)
-    {
+    while (randomIndex == currentIndex) {
         randomIndex = Math.floor(Math.random() * websites.length);
     }
     currentIndex = randomIndex;
