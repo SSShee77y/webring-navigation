@@ -27,12 +27,12 @@ body {
     margin: 0;
 }
 
-div {
-    margin: 40px;
-}
-
 img {
     max-width: 80%;
     object-fit: cover;
     object-position: center;
+}
+
+.content-wrapper {
+    margin: 40px;
 }
